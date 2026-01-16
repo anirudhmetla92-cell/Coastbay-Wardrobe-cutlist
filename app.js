@@ -1,14 +1,15 @@
 const SUPPORTED = [1400, 1500, 1800, 2100, 2400, 2700, 3000, 3600];
 
 const CONFIGS = {
-  1400: { half: 4, full: 0, plain: 1, adj: 6, fixed: 1, drawers: 1, rails: 2, sheets: 2 },
-  1500: { half: 2, full: 1, plain: 1, adj: 6, fixed: 1, drawers: 1, rails: 2, sheets: 2 },
-  1800: { half: 2, full: 1, plain: 1, adj: 6, fixed: 1, drawers: 1, rails: 2, sheets: 2 },
-  2100: { half: 4, full: 0, plain: 2, adj: 6, fixed: 1, drawers: 1, rails: 4, sheets: 3 },
-  2400: { half: 4, full: 0, plain: 2, adj: 6, fixed: 1, drawers: 1, rails: 4, sheets: 3 },
-  2700: { half: 4, full: 1, plain: 2, adj: 10, fixed: 2, drawers: 1, rails: 4, sheets: 3 },
-  3000: { half: 6, full: 0, plain: 2, adj: 10, fixed: 2, drawers: 1, rails: 4, sheets: 3 },
-  3600: { half: 6, full: 0, plain: 2, adj: 10, fixed: 2, drawers: 1, rails: 4, sheets: 3 }
+  const CONFIGS = {
+  1400: { half: 2, full: 0, plain: 1, adj: 2, fixed: 1, drawers: 1, rails: 2, sheets: 1 },
+  1500: { half: 2, full: 0, plain: 1, adj: 2, fixed: 1, drawers: 1, rails: 2, sheets: 1 },
+  1800: { half: 2, full: 1, plain: 1, adj: 5, fixed: 2, drawers: 1, rails: 2, sheets: 2 },
+  2100: { half: 2, full: 1, plain: 1, adj: 5, fixed: 2, drawers: 1, rails: 2, sheets: 2 },
+  2400: { half: 2, full: 1, plain: 2, adj: 5, fixed: 2, drawers: 1, rails: 4, sheets: 2 },
+  2700: { half: 2, full: 1, plain: 2, adj: 5, fixed: 2, drawers: 1, rails: 4, sheets: 2 },
+  3000: { half: 2, full: 1, plain: 3, adj: 5, fixed: 2, drawers: 1, rails: 4, sheets: 2 },
+  3600: { half: 4, full: 1, plain: 3, adj: 8, fixed: 3, drawers: 1, rails: 4, sheets: 3 }
 };
 
 let lastCutlist = [];
