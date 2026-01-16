@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coastbay Wardrobe Cutlist</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px;max-width:980px}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+    input,select,button{padding:10px;font-size:16px}
+    button{cursor:pointer}
+    table{border-collapse:collapse;width:100%;margin-top:14px}
+    th,td{border:1px solid #ddd;padding:8px;text-align:left}
+    th{background:#f3f3f3}
+    .note{color:#555;margin-top:6px}
+  </style>
+</head>
+<body>
+  <h2>Coastbay Wardrobe Cutlist</h2>
+
+  <div class="row">
+    <label>Room width (mm):</label>
+    <input id="roomWidth" type="number" min="1" placeholder="e.g. 2320" />
+  </div>
+
+  <div class="row">
+    <label>Wall on both sides?</label>
+    <select id="wallBoth">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </select>
+
+    <button onclick="generate()">Generate</button>
+    <button onclick="downloadCSV()" id="dlBtn" disabled>Download CSV</button>
+  </div>
+
+  <div class="note" id="matchInfo"></div>
+  <div id="tableWrap"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
